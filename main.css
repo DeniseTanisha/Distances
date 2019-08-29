@@ -1,0 +1,26 @@
+#heading {
+  font-family: "Questrial", sans-serif;
+  text-align: center;
+  font-size: 3rem;
+}
+
+#selectionboxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#startingSelection {
+  font-size: 2rem;
+  margin: 5rem;
+}
+
+#finishingSelection {
+  font-size: 2rem;
+  margin: 5rem;
+}
+
+#distanceOutput {
+  font-size: 2rem;
+  margin: 5rem;
+}

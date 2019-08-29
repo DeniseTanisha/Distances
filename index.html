@@ -5,10 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" type="text/css" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Questrial&display=swap"
+      rel="stylesheet"
+    />
     <title>Distances</title>
   </head>
   <body>
-    <h1>FIND THE DISTANCE BETWEEN SOME PLACES AND OTHER PLACES</h1>
+    <h1 id="heading">
+      Find The Distance Between Some Places... <br />
+      and Others.
+    </h1>
+    <article id="selectionboxes">
+      <section id="startingSelection">
+        <h4>Select a starting point:</h4>
+        <div>
+          <input type="radio" id="Astart" name="StartPoint" value="A" checked />
+          <label for="Astart">Point A</label>
+        </div>
+        <div>
+          <input type="radio" id="Bstart" name="StartPoint" value="B" />
+          <label for="Bstart">Point B</label>
+        </div>
+        <div>
+          <input type="radio" id="Cstart" name="StartPoint" value="C" />
+          <label for="Cstart">Point C</label>
+        </div>
+        <div>
+          <input type="radio" id="Dstart" name="StartPoint" value="D" />
+          <label for="Dstart">Point D</label>
+        </div>
+        <div>
+          <input type="radio" id="Estart" name="StartPoint" value="E" />
+          <label for="Estart">Point E</label>
+        </div>
+        <div>
+          <input type="radio" id="Fstart" name="StartPoint" value="F" />
+          <label for="Fstart">Point F</label>
+        </div>
+        <div>
+          <input type="radio" id="Gstart" name="StartPoint" value="G" />
+          <label for="Gstart">Point G</label>
+        </div>
+        <div>
+          <input type="radio" id="Hstart" name="StartPoint" value="H" />
+          <label for="Hstart">Point H</label>
+        </div>
+      </section>
+      <section id="finishingSelection">
+        <h4>Select a finishing point:</h4>
+        <div>
+          <input
+            type="radio"
+            id="Afinish"
+            name="finishPoint"
+            value="A"
+            checked
+          />
+          <label for="Afinish">Point A</label>
+        </div>
+        <div>
+          <input type="radio" id="Bfinish" name="finishPoint" value="B" />
+          <label for="Bfinish">Point B</label>
+        </div>
+        <div>
+          <input type="radio" id="Cfinish" name="finishPoint" value="C" />
+          <label for="Cfinish">Point C</label>
+        </div>
+        <div>
+          <input type="radio" id="Dfinish" name="finishPoint" value="D" />
+          <label for="Dfinish">Point D</label>
+        </div>
+        <div>
+          <input type="radio" id="Efinish" name="finishPoint" value="E" />
+          <label for="Efinish">Point E</label>
+        </div>
+        <div>
+          <input type="radio" id="Ffinish" name="finishPoint" value="F" />
+          <label for="Ffinish">Point F</label>
+        </div>
+        <div>
+          <input type="radio" id="Gfinish" name="finishPoint" value="G" />
+          <label for="Gfinish">Point G</label>
+        </div>
+        <div>
+          <input type="radio" id="Hfinish" name="finishPoint" value="H" />
+          <label for="Hfinish">Point H</label>
+        </div>
+      </section>
+      <section id="distanceOutput">
+        <button onclick="displayRadioValue()"></button>
+        <h4>The distance between these points is:</h4>
+        <output></output>
+      </section>
+    </article>
     <script src="main.js"></script>
   </body>
 </html>
