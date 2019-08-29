@@ -1,26 +1,58 @@
-#heading {
+* {
   font-family: "Questrial", sans-serif;
+}
+
+#heading {
   text-align: center;
   font-size: 3rem;
+  color: #602e9e;
 }
 
 #selectionboxes {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 
 #startingSelection {
+  border: #b464a3 solid 5px;
+  border-radius: 5%;
+  padding: 0.5rem;
   font-size: 2rem;
-  margin: 5rem;
+  margin: 2rem;
+  background-color: #9fc7aa;
 }
 
 #finishingSelection {
+  border: #b464a3 solid 5px;
+  border-radius: 5%;
+  background-color: #9fc7aa;
+  padding: 0.5rem;
   font-size: 2rem;
-  margin: 5rem;
+  margin: 2rem;
 }
 
 #distanceOutput {
+  border-radius: 5%;
+  text-align: center;
+  border: #b464a3 solid 5px;
+  background-color: #9fc7aa;
+  padding: 0.5rem;
   font-size: 2rem;
-  margin: 5rem;
+  margin: 2rem;
+}
+
+#submitbutton {
+  width: 10em;
+  height: 2em;
+  border: 3px solid #a02f00;
+  border-radius: 5%;
+  color: #a02f00;
+  font-size: 1em;
+}
+
+#submitbutton:hover {
+  cursor: pointer;
+  background-color: #b464a3;
 }
