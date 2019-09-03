@@ -4,7 +4,7 @@
 
 // module.exports = sum;
 
-const graph = {
+const distances = {
   A: { C: 2 },
   B: { D: 4, E: 7 },
   C: { F: 4, D: 1, A: 2 },
@@ -15,9 +15,37 @@ const graph = {
   H: { G: 4, E: 10 }
 };
 
-const distance = (startPoint, endPoint) => {};
+const displayRadioValue = () => {
+  const start = () => {
+    document.getElementsByName("StartPoint");
+    for (i = 0; i < start.length; i++) {
+      if (start[i].checked)
+        document.getElementById("result").innerHTML =
+          "StartPoint: " + start[i].value;
+    }
+  };
+  const finish = () => {
+    document.getElementsByName("finishPoint");
+    for (i = 0; i < finish.length; i++) {
+      if (finish[i].checked)
+        document.getElementById("result").innerHTML =
+          "finishPoint: " + finish[i].value;
+    }
+  };
 
-console.log(graph.A.C);
+  return console.log(distances.StartPoint.FinishPoint);
+};
+
+const distance = () => {
+  return console.log(distances.A.C);
+};
+
+
+
+
+
+
+
 
 // const ShortestDistanceRoute = (point, processed) => {
 //   return Object.keys(point).reduce((lowest, distance) => {
